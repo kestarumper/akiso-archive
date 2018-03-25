@@ -1,0 +1,10 @@
+1. usun plik
+2. sudo vim -b fat.img
+3. :%!xxd
+4. FAT zamienia pierwsza litere usunietego pliku, trzeba ja znalezc w tablicy alokacji
+5. Wchodzimy w tryb edycji i zamieniamy bajt ktory byl pierwsza litera pliku na jakas litere
+6. :%!xxd -r
+7. :wq
+8. umount fs
+9. sudo mount -t msdos fat.img fs -o umask=000,loop
+10. plik pojawia sie zamontowanym katalogu

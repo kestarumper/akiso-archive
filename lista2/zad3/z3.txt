@@ -1,0 +1,2 @@
+1.	-Wall - włącza wszystkie flagi ostrzezen
+	-pedantic - kod musi byc zgodny z ISO C (lub C++)

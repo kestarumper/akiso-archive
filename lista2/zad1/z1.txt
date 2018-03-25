@@ -1,0 +1,2 @@
+1.  /dev zawiera pliki urządzeń, lista jest tworzona podczas instalacji
+    /proc zawiera informacje o procesach i systemie

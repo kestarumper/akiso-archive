@@ -1,0 +1,18 @@
+Kompilacja i uruchomienie
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+arm-none-eabi-as nwd.s -o nwd.o
+arm-none-eabi-gcc -specs=rdimon.specs nwd.o -o nwd
+qemu-arm nwd
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+DEBADŻER
+arm-none-eabi-gdb -tui nwd
+
+layout asm
+layout regs
+target sim
+load
+break main
+si
+...
